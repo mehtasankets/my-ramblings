@@ -1,0 +1,4 @@
+baseURL = "http://mehtasanket.in/"
+languageCode = "en-us"
+title = "My Ramblings"
+theme = "novela"
