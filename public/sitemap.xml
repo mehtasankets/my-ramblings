@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://mehtasanket.in/</loc>
+    <lastmod>2020-06-17T02:55:42+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mehtasanket.in/post/my-second-post/</loc>
+    <lastmod>2020-06-17T02:55:42+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mehtasanket.in/post/</loc>
+    <lastmod>2020-06-17T02:55:42+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mehtasanket.in/post/my-first-post/</loc>
+    <lastmod>2020-06-17T02:40:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mehtasanket.in/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://mehtasanket.in/authors/</loc>
+  </url>
+  
+  <url>
+    <loc>http://mehtasanket.in/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://mehtasanket.in/authors/sanket-mehta/</loc>
+  </url>
+  
+  <url>
+    <loc>http://mehtasanket.in/tags/</loc>
+  </url>
+  
+</urlset>

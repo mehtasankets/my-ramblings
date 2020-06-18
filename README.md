@@ -15,3 +15,6 @@ Ref: https://gohugo.io/getting-started/quick-start/
 
 ## Create a new page
 * Create a page using hugo command: `hugo new post/my-new-page-heading.md`
+
+## Try out docker containerization
+https://www.linode.com/docs/kubernetes/deploy-container-image-to-kubernetes/#build-the-docker-image
