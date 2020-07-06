@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Ramblings</title>
+    <link>http://mehtasanket.in/</link>
+    <description>Recent content on My Ramblings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Jul 2020 17:14:52 +0530</lastBuildDate>
+    
+	<atom:link href="http://mehtasanket.in/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker Week 1</title>
+      <link>http://mehtasanket.in/post/docker-week-1/</link>
+      <pubDate>Sun, 05 Jul 2020 17:14:52 +0530</pubDate>
+      
+      <guid>http://mehtasanket.in/post/docker-week-1/</guid>
+      <description>Arc-EXL is a program initiated in Arcesium which focuses on Experiential Learning i.e. learning through experience. I signed up to mentor a group of 3 mentees on Docker technology. Idea here was to provide few scenarios to encourage mentees to learn the technology through reflection on implementing a solution for the same.
+We kept the structure of the program very simple. Every week, we met on Monday to discuss the progress made in earlier week and to discuss focus points (problem statements) for the week.</description>
+    </item>
+    
+    <item>
+      <title>My Second Post</title>
+      <link>http://mehtasanket.in/post/my-second-post/</link>
+      <pubDate>Wed, 17 Jun 2020 02:55:42 +0530</pubDate>
+      
+      <guid>http://mehtasanket.in/post/my-second-post/</guid>
+      <description>Hello everyone</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://mehtasanket.in/post/my-first-post/</link>
+      <pubDate>Wed, 17 Jun 2020 02:40:02 +0530</pubDate>
+      
+      <guid>http://mehtasanket.in/post/my-first-post/</guid>
+      <description>Hello everyone,
+print(&amp;#34;Hello World!&amp;#34;) Second markdown element  abc xyz  &amp;ndash;</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://mehtasanket.in/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://mehtasanket.in/about/</guid>
+      <description>A scratchpad to jot down learnings, ideas, discoveries and stories.</description>
+    </item>
+    
+  </channel>
+</rss>

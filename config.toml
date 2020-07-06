@@ -1,4 +1,39 @@
 baseURL = "http://mehtasanket.in/"
 languageCode = "en-us"
 title = "My Ramblings"
-theme = "novela"
+theme = "mediumish-gohugo-theme"
+summaryLength = 25
+enableEmoji = true
+copyright = "Sanket Mehta - All rights reserved"
+
+[params.author]
+  name = "Sanket Mehta"
+  thumbnail = "/images/author.jfif"
+
+[params]
+  logo = "/images/logo.png"
+  description ="Sharing is a gift to mankind, let's exploit it to the fullest!"
+
+[params.index]
+  picture = "/images/author.jfif"
+  title = "Sanket Mehta"
+  subtitle = "A scratchpad to jot down learnings, ideas, discoveries and stories!"
+  alertbar = true
+
+[params.social]
+  github = "mehtasankets"
+  linkedin = "mehtasankets"
+  twitter = "mehtass"
+  instagram = "mehtasankets"
+
+## Main Menu
+[[menu.main]]
+    name = "Blog"
+    weight = 100
+    identifier = "blog"
+    url = "/blog"
+[[menu.main]]
+    name = "About Me"
+    identifier = "about"
+    weight = 200
+    url = "/"
