@@ -12,6 +12,8 @@ comments: true
 
 We kept the structure of the program very simple. Every week, we met on Monday to discuss the progress made in earlier week and to discuss focus points (problem statements) for the week. Mentees were expected to come up with solutions on how to deal with these problem statements. We then regroup on Fridays to discuss the solutions, mold it into Docker and set an exercise to implement the same over the weekend.
 
+**Side note:** I always wanted to have my own blog site, I decided to learn about static site generators and use it for my docker mentorship program. Now that you are reading the blog on the static site generated using Hugo and deployed using docker, we can call the program a success.
+
 ### Pre-requisites for the program
   * Have an access to a *Linux based OS* (Ubuntu / Fedora / Alpine): You can duel-boot your machine or have a virtual machine setup or have WSL (WSL version 2 to be specific) installed over windows or have an instance in some cloud (EC2 on AWS / VM instance on GCP)
   * Setup a small *web-service project*: Project can be a Python web-service or Node JS project or a micro-service using [Quarkus](https://quarkus.io/) or [Spring-Boot](https://spring.io/projects/spring-boot) or [Micronaut](https://micronaut.io/).
@@ -27,7 +29,7 @@ Tradeoff: Containers don’t do true virtualization, you can’t run a windows c
 A good analogy for VM vs Containers: Stand-alone houses (completely isolated) vs Apartments (shared plumbing, electricity, security, etc.)
 
 #### 2. How to make sure that the application you wrote works fine on friend's computer or works in production environment?
-Intention here was to understand compatibility issues which will help understand the power of Docker.
+Intention here was to understand compatibility issues which will help understand the power of Docker and why is it really required.
 * README file with instructions
   * What if someone miss to run a command?
 * Shell script to run all the instructions in README
