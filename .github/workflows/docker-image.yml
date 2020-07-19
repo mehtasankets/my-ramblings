@@ -28,9 +28,10 @@ jobs:
           [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
         fi
         echo VERSION=$VERSION
-        
+        echo "::set-env name=VERSION::$VERSION"
+
     - name: Create docker image
-      run:
+      run: |
         echo version=$VERSION
         docker build . --file Dockerfile --tag mehtasankets/my-ramblings:$VERSION
     
