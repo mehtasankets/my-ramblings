@@ -4,6 +4,7 @@ title = "My Ramblings"
 theme = "mediumish-gohugo-theme"
 summaryLength = 25
 enableEmoji = true
+disqusShortname = "mehtasanket"
 copyright = "Sanket Mehta - All rights reserved"
 
 [params.author]
@@ -25,6 +26,7 @@ copyright = "Sanket Mehta - All rights reserved"
   linkedin = "mehtasankets"
   twitter = "mehtass"
   instagram = "mehtasankets"
+  wordpress = "mehtasankets"
 
 ## Main Menu
 [[menu.main]]

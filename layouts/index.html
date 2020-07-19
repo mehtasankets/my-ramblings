@@ -1,0 +1,54 @@
+{{ define "header"}}
+{{- partial "_shared/navbar.html" . -}}
+{{ end }}
+
+{{ define "main" }}
+<div class="main-content">
+    <header class="text-center">
+        <div class="mainheading">
+            <h1 class="sitetitle">
+                <img src="{{ .Site.Params.index.picture | urlize | relURL }}" class="rounded-circle" style="max-width: 7%!important;">
+                {{ .Site.Params.index.title }}
+            </h1>
+        </div>    
+    </header>
+
+    <section class="text-center">
+        <span class="lead">{{ with .Site.Params.index.subtitle }}</span>
+        <h3 class="index-sub">{{ . }}</h3>
+        {{ end }}
+        {{ with .Site.Params.index.mdtext }}
+        <h6 class="index-text">{{ . | markdownify }}</h6>
+        {{ end }}
+        <br />
+        <p>by Sanket Mehta</p>
+        {{- partial "_shared/social.html" . -}}
+        <br />
+        <p>
+            Get started with <a href="/blog">my rambling blog posts</a> |
+            <a href="" target="_blank">View source code</a> of this website which is developed using 
+            <a href="https://gohugo.io/" target="_blank">Hugo framework</a> | 
+            View my <a href="https://mehtasankets.wordpress.com/" target="_blank">older blog posts on Wordpress</a>
+        </p>
+    </section>
+    <section>
+        <section class="recent-posts">
+            <div class="section-title">
+                <h2><span>Most Recent Posts</span></h2>
+            </div>
+            <div class="row listrecent">
+                {{ $recent := where .Site.Pages "Type" "post" }}
+                {{ $recentPages := where $recent "IsPage" true }}
+                {{ range first 3 $recentPages.ByDate.Reverse }}
+                {{- partial "list-partials/postbox.html" . -}}
+                {{ end }}                
+            </div>
+        </section>
+    </section>
+</div>
+{{end}}
+
+{{ define "footer" }}
+{{ partial "_shared/jumbotron.html" . }}
+{{- partial "_shared/footer.html" . -}}
+{{end}}

@@ -1,0 +1,40 @@
+<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 p-5 align-self-center text-center">
+			<h4>Connect with me!</h4>
+			<p>
+                <a class="link mb-1" href="https://twitter.com/mehtass" 
+				target="_blank" title="@mehtass"> 
+				<i class="fab fa-twitter"></i>&nbsp;@mehtass</a>
+				&nbsp;
+				<a class="link mb-1" href="https://github.com/mehtasankets" 
+				target="_blank" title="mehtasanktes"> 
+				<i class="fab fa-github"></i>&nbsp;mehtasankets</a>
+				&nbsp;
+				<a class="link mb-1" href="https://youtube.com/user/mehtasankets" 
+				target="_blank" title="mehtasankets"> 
+				<i class="fab fa-youtube"></i>&nbsp;mehtasankets</a>
+				&nbsp;
+				<a class="link mb-1" href="https://linkedin.com/in/mehtasankets" 
+				target="_blank" title="mehtasankets"> 
+				<i class="fab fa-linkedin"></i>&nbsp;mehtasankets</a>
+				&nbsp;
+				<a class="link mb-1" href="https://facebook.com/mehtasankets" 
+				target="_blank" title="mehtasankets"> 
+				<i class="fab fa-facebook"></i>&nbsp;mehtasankets</a>
+				&nbsp;
+				<a class="link mb-1" href="https://instagram.com/mehtasankets" 
+				target="_blank" title="@mehtasankets"> 
+				<i class="fab fa-instagram"></i>&nbsp;@mehtasankets</a>				
+			</p>
+		</div>
+        <div class="col-md-8 p-5 align-self-center text-center">
+            <h4>Explore these popular tags!</h4>
+			{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+			<a class="mt-1 mb-1" href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+			{{ end }}
+		</div>
+	</div>
+</div>
