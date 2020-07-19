@@ -29,6 +29,10 @@ jobs:
         fi
         echo VERSION=$VERSION
         echo "::set-env name=VERSION::$VERSION"
+        
+    - name: Login to docker hub
+      run: 
+        echo "${{ secrets.DOCKER_PASSWORD }}" | docker login --user mehtasankets --password-stdin
 
     - name: Create docker image
       run: |
