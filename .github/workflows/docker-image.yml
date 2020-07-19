@@ -26,6 +26,7 @@ jobs:
         else    
           VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
           [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
+        fi
         echo VERSION=$VERSION
         
     - name: Create docker image
