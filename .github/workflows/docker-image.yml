@@ -23,7 +23,7 @@ jobs:
       run: |
         if [ ${{ github.event.inputs.tag }} ]; then
           VERSION=${{ github.event.inputs.tag }}
-        else |          
+        else    
           VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
           [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
         echo VERSION=$VERSION
