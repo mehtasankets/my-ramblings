@@ -1,0 +1,22 @@
+name: Build and publish docker image
+on:
+  push:
+    tags: 
+      - v*
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Extract version
+      run: 
+        VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
+        [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
+        echo VERSION=$VERSION
+    - name: Create docker image
+      run:
+        echo version=$VERSION
+        docker build . --file Dockerfile --tag mehtasankets/my-ramblings:$VERSION
+    - name: 
+      run: 
+        docker push mehtasankets/my-ramblings
