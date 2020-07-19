@@ -1,4 +1,4 @@
-name: Build and publish docker image
+name: My Ramblings Docker Image Publish Action
 on:
   workflow_dispatch:
     inputs:
@@ -21,9 +21,11 @@ jobs:
     
     - name: Extract version
       run: |
+        echo workflowDispatcherVersion=${{ github.event.inputs.tag }}
+        echo githubRef=${{ github.ref }}
         if [ ${{ github.event.inputs.tag }} ]; then
           VERSION=${{ github.event.inputs.tag }}
-        else    
+        else
           VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
           [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
         fi
