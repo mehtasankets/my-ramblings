@@ -32,7 +32,7 @@ jobs:
         
     - name: Login to docker hub
       run: 
-        echo "${{ secrets.DOCKER_PASSWORD }}" | docker login --user mehtasankets --password-stdin
+        echo "${{ secrets.DOCKER_PASSWORD }}" | docker login --username mehtasankets --password-stdin
 
     - name: Create docker image
       run: |
