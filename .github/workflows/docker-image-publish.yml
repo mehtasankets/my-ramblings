@@ -21,6 +21,7 @@ jobs:
     
     - name: Extract version
       run: |
+        chmod -R 777 ./
         ls -al
         echo workflowDispatcherVersion=${{ github.event.inputs.tag }}
         echo githubRef=${{ github.ref }}
