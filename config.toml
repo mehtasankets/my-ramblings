@@ -1,4 +1,3 @@
-baseURL = "http://mehtasanket.in/"
 languageCode = "en-us"
 title = "My Ramblings"
 theme = "mediumish-gohugo-theme"
