@@ -12,6 +12,7 @@ copyright = "Sanket Mehta - All rights reserved"
 
 [params]
   logo = "/images/logo.png"
+  shortcutIconLogo = "/images/shortcut-icon-logo.png"
   description ="Sharing is a gift to mankind, let's exploit it to the fullest!"
 
 [params.index]
