@@ -33,7 +33,7 @@ copyright = "Sanket Mehta - All rights reserved"
     name = "Blog"
     weight = 100
     identifier = "blog"
-    url = "/blog"
+    url = "/blog/"
 [[menu.main]]
     name = "About Me"
     identifier = "about"
